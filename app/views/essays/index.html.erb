@@ -2,8 +2,11 @@
  <% @essays.each do |essay| %>
  <%= essay.title %>
  <br>
- <%= essay.body %>
+ <%= sanitize essay.body %>
  <br>
  <%= link_to "READ MORE", essay_path(essay) %>
+ <br>
+ <%= link_to "Edit", edit_essay_path(essay) %>
+ <br>
  <br>
  <% end %>

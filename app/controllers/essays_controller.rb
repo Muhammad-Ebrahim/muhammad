@@ -2,7 +2,7 @@ class EssaysController < ApplicationController
    before_action :find_essay, only: [:edit, :update, :show, :destroy]  
     def index
         @essays = Essay.all
-      end
+    end
     
       def show
       end    
@@ -20,8 +20,6 @@ class EssaysController < ApplicationController
       end
     
       def edit
-        @essay = Essay.find_by params[:id]
-    
       end
     
       def update
