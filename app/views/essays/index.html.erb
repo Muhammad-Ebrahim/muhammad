@@ -1,0 +1,9 @@
+<h1>It took me forever to make it work</h1>
+ <% @essays.each do |essay| %>
+ <%= essay.title %>
+ <br>
+ <%= essay.body %>
+ <br>
+ <%= link_to "READ MORE", essay_path(essay) %>
+ <br>
+ <% end %>
