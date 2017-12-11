@@ -41,6 +41,6 @@ class EssaysController < ApplicationController
       end
 
       def find_essay
-        @essay = Essay.find(params[:id])
+        @essay = Essay.find_by(slug:params[:slug])
       end
 end
